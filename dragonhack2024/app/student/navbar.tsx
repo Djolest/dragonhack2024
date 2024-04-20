@@ -8,7 +8,9 @@ const Navbar = () => {
       <div className="w-full h-20 sticky top-0" style={{ background: "#7CB9E8" }}>
         <div className="container mx-auto px-4 h-full flex justify-between items-center">
         <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors mb-3 text-2xl font-semibold">
+            <Link href="/enterAs">
             <Image src="/tutor.svg" alt="Your Image" width={100} height={100}></Image>
+            </Link>
         </div>
           <ul className="flex gap-x-6 text-white">
             <li>

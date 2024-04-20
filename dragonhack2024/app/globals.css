@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.links-container {
+    overflow-y: auto;
+    max-height: calc(100vh - 80px); /* Adjust as needed */
+  }
