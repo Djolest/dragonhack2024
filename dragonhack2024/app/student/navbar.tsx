@@ -12,28 +12,34 @@ const Navbar = () => {
         </div>
           <ul className="flex gap-x-6 text-white">
             <li>
-              <Link href="/home">
+                <a>
+              <Link href="/student">
                 <p className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 mb-3 text-2xl font-semibold" style={{ color: '#007FFF' }}>
                   Home
                 </p>
               </Link>
+              </a>
             </li>
             <li>
-              <Link href="/search_tutor">
+                <a>
+              <Link href="/student/search_tutor">
                 <p className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 mb-3 text-2xl font-semibold" style={{ color: '#007FFF' }}>
                   Search Tutor
                 </p>
               </Link>
+              </a>
             </li>
             <li>
-              <Link href="/search_notes">
+            <a>
+              <Link href="/student/search_notes">
                 <p className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 mb-3 text-2xl font-semibold" style={{ color: '#007FFF' }}>
                   Search Notes
                 </p>
               </Link>
+              </a>
             </li>
             <li>
-            <Link href="/profil">
+            <Link href="/student/profil">
             <Image src="/user-286.svg" alt="Your Image" width={90} height={90}></Image>
             </Link>
             </li>
