@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { UserProvider } from '@auth0/nextjs-auth0/client';
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/app/components/Navbar";
+//import Footer from "@/app/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +26,6 @@ export default function RootLayout({
         <main className="relative overflow-hidden">
           {children}
         </main>
-        <Footer></Footer>
         </body>
       </UserProvider>
     </html>

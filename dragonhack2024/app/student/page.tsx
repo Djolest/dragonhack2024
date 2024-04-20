@@ -33,10 +33,10 @@ export const dynamic = 'force-dynamic';
 export default async function Page(){
   const { documents:tutors } = await listTutors();
   const { documents:notes } = await listNotes();
-  console.log("----------------");
+  /*console.log("----------------");
   console.log(tutors);
   console.log("----------------");
-  console.log(notes);
+  console.log(notes);*/
 
 
   // Sample data for top tutors

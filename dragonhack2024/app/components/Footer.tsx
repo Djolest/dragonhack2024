@@ -1,6 +1,6 @@
 // components/Footer.tsx
 
-import React from 'react';
+/*import React from 'react';
 import { NAV_LINKS } from '@/constants';
 
 const Footer = () => {
@@ -17,4 +17,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;*/

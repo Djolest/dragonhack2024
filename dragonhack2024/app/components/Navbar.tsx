@@ -1,13 +1,19 @@
-import { NAV_LINKS } from "@/constants"
+//import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
-import Button from "./Button"
 
-const Navbar = () => {
+const NAV_LINKS = [
+    {label:'Home', key:1, href:'/'},
+    {label:'Search Tutor', key:2, href:'/'},
+    {label:'Search Notes', key:3, href:'/'},
+    {label:'About Us', key:4, href:'/'} 
+];
+
+export default function Navbar() {
     return (
-        <nav className="flexBetween max-container padding-container relative z-30 py-5">
+        <nav className="flexBetween max-container padding-container relative z-30 py-5 border-solid border-2">
             <Link href="/">
-                <Image src="/hilink-logo.svg" alt="logo" width={75} height={29} />
+                <h1 className="text-lime-500 text-3xl font-bold">Tutorify</h1>
             </Link>
 
             <ul className="hidden h-full gap-12 lg:flex">
@@ -17,16 +23,6 @@ const Navbar = () => {
                     </Link>
                 ))}
             </ul>
-
-            <Image
-                src="menu.svg"
-                alt="menu"
-                width={32}
-                height={32}
-                className="inline-block cursor-pointer lg:hidden"
-            />
         </nav>
     )
 }
-
-export default Navbar

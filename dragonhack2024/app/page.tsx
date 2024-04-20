@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero from "@/components/Hero"
+import Hero from "@/app/components/Hero"
 import Link from "next/link";
 import { getSession } from '@auth0/nextjs-auth0';
 
