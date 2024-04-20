@@ -2,6 +2,7 @@
 
 import { useUser } from '@auth0/nextjs-auth0/client';
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   const { user, error, isLoading } = useUser();
@@ -20,11 +21,9 @@ export default function Home() {
           <Image src="/tutor.svg" alt="Your Image" width={200} height={200}>
           </Image>
           </div>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        <Link
+          href="/student"
           className=""
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 mb-3 text-2xl font-semibold" style={{ color: '#007FFF' }}>
             Enter as student{" "}
@@ -35,12 +34,10 @@ export default function Home() {
           <p className="m-0 max-w-[30ch] text-sm opacity-50" style={{ color: '#007FFF' }}>
           Find a tutor or get valuable notes and presentations.
           </p>
-        </a>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        </Link>
+        <Link
+          href="/api/auth/logout"
           className=""
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 mb-3 text-2xl font-semibold" style={{ color: '#007FFF' }}>
             Enter as tutor{" "}
@@ -51,7 +48,7 @@ export default function Home() {
           <p className="m-0 max-w-[30ch] text-sm opacity-50" style={{ color: '#007FFF' }}>
           Help students by offering them study material or lessons.
           </p>
-        </a>
+        </Link>
       </div>
     </main>
   );
