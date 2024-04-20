@@ -1,5 +1,5 @@
 import { Account, Client, Databases, Storage, ID, Query } from 'appwrite';
-
+import { unstable_noStore as noStore, revalidatePath } from 'next/cache';
 
 const client = new Client();
 const databases = new Databases(client);
@@ -42,10 +42,6 @@ export async function listTutors() {
     const data = await databases.listDocuments(
         database,
         collectionUsers,
-        [
-            Query.orderDesc("$createdAt"),
-            Query.equal("isTutor", "true")
-        ]
     );
 
     return data;
@@ -53,14 +49,11 @@ export async function listTutors() {
 
 // Actions for getting notes
 
-export async function getNotes() {
+export async function listNotes() {
   noStore();
   const data = await databases.listDocuments(
     database,
     collectionNotes,
-    [
-      Query.orderDesc("$createdAt"),
-    ]
   );
 
   return data;

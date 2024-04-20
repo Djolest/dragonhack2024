@@ -1,4 +1,5 @@
 import React from 'react';
+import { listTutors, listNotes } from './../lib/server/appwrite'
 
 // Common styles
 const containerStyles = "container mx-auto py-8";
@@ -26,7 +27,18 @@ const TopSection = ({ title, data }) => (
   </div>
 );
 
-const Page = () => {
+
+export const dynamic = 'force-dynamic';
+
+export default async function Page(){
+  const { documents:tutors } = await listTutors();
+  const { documents:notes } = await listNotes();
+  console.log("----------------");
+  console.log(tutors);
+  console.log("----------------");
+  console.log(notes);
+
+
   // Sample data for top tutors
   const topTutors = [
     { id: 1, name: 'John Doe', subjects: ['Math', 'Science'] },
@@ -43,10 +55,11 @@ const Page = () => {
 
   return (
     <div className={containerStyles}>
+      {tutors.map(tutor => (
+        <p>{tutor.Name}</p>
+      ))}
       <TopSection title="Top Tutors" data={topTutors} />
       <TopSection title="Top Notes" data={topNotes} />
     </div>
   );
 };
-
-export default Page;
