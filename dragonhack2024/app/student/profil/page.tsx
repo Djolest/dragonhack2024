@@ -6,10 +6,10 @@ import ProfilePage from '@/components/ProfilePage';
 const Profile = () => {
   // Sample student data
   const student = {
-    name: 'John Doe',
+    name: 'Dimitar Djorlev',
     info: 'Faculty, BSc',
     about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque ligula sed viverra dictum.',
-    profilePicture: '/profilna.jpeg', // Path to profile picture
+    profilePicture: '/viber_image_2024-04-21_01-46-13-333.jpg', // Path to profile picture
     subjects: [
       { name: 'Mathematics', desiredGrade: 'A' },
       { name: 'Physics', desiredGrade: 'B' },
