@@ -1,7 +1,7 @@
 // pages/profile.tsx
 
 import React from 'react';
-import ProfilePage from '@/components/ProfilePage';
+import ProfilePage from '@/app/components/ProfilePage';
 
 const Profile = () => {
   // Sample student data
