@@ -19,7 +19,6 @@ const Button = ({ type, title, icon, variant, href }: ButtonProps) => {
       onClick={()=>{
         if(href){
           window.location.href = href
-          console.log(href);
         }
       }}
     >

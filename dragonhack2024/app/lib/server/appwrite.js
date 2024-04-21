@@ -23,7 +23,6 @@ const bucketNotes = process.env.NEXT_PUBLIC_APPWRITE_BUCKET_NOTES_ID;
 export async function getUser (auth0Id) {
     // Query for user by auht0Id
     noStore();
-    console.log(auth0Id);
     const data = await databases.listDocuments(
         database, 
         collectionUsers, 

@@ -53,7 +53,6 @@ export const dynamic = 'force-dynamic';
 export default async function Page(){
   const { documents:tutors } = await listTutors();
   const { documents:notes } = await listNotes();
-  console.log(notes);
 
   return (
     <div className="container mx-auto py-8">
