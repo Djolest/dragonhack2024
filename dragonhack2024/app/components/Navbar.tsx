@@ -13,7 +13,7 @@ export default function Navbar() {
     return (
         <nav className="flexBetween max-container padding-container relative z-30 py-5 border-solid border-2">
             <Link href="/">
-                <h1 className="text-lime-500 text-3xl font-bold">Tutorify</h1>
+                <h1 className="text-cyan-500 text-3xl font-bold">Tutorify</h1>
             </Link>
 
             <ul className="hidden h-full gap-12 lg:flex">
