@@ -15,7 +15,7 @@ const TopSection = ({title, data}:{title:any, data:any}) => (
     </div>
     
     {data.map( (item:any) => (
-      <a key={item.id} href="#" className="w-[70%] p-6 mb-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+      <a key={item.id} href="/student/searchTutor" className="w-[70%] p-6 mb-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
         <h2 className="text-lg font-semibold">{item.Name ? item.Name : item.Title}</h2>
         <p>{item.Bio + ' ' +  (item.Subjects ? " " : item.Subject.toString())}</p>
       </a>

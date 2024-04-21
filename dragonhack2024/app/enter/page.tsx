@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <div className="grid text-center mb-0 max-w-6xl grid-cols-2 grid-rows-2 text-center gap-10">
+      <div className="grid text-center mb-0 max-w-6xl grid-cols-2 grid-rows-2 gap-10">
         
         <div className='flex justify-center'>
           <Image src="/user-286.svg" alt="Your Image" width={200} height={200}></Image>
