@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { UserProvider } from '@auth0/nextjs-auth0/client';
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Navbar from "@/app/components/Navbar";
 //import Footer from "@/app/components/Footer";
@@ -22,10 +24,12 @@ export default function RootLayout({
     <html lang="en">
       <UserProvider>
         <body>
-        <Navbar></Navbar>
-        <main className="relative overflow-hidden">
-          {children}
-        </main>
+          <Navbar></Navbar>
+          <main className="relative overflow-hidden">
+            {children}
+          </main>
+          <Analytics />
+          <SpeedInsights />
         </body>
       </UserProvider>
     </html>
