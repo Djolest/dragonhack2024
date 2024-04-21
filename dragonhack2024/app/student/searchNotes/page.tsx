@@ -110,3 +110,9 @@ const Page = () => {
 };
 
 export default Page;*/
+
+export default function Page(){
+  return (
+    <p className="text-8xl text-center">Still not in production!</p>
+  );
+}
