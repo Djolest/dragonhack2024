@@ -50,12 +50,14 @@ export default function TopSection ({ title, data } : {title:any, data:any}) {
           </div>
         </div>
       </div>
+
       {filteredData.map( (item:any) => (
-        <a key={item.Name} href={'/student/tutor/'+item.user_id_Auth0} className="w-[70%] p-6 mb-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <a key={item.Name} href={'/student/tutor/'+item.user_id_Auth0} className="w-[70%] p-6 mb-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
           <h2 className="text-lg font-semibold">{item.Name}</h2>
           <p>{item.Bio}</p>
         </a>
       ))}
+      
     </div>
   )
 };

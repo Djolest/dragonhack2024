@@ -2,8 +2,6 @@ import TopSection from '@/app/components/search';
 import React from 'react';
 import { listTutors } from './../../lib/server/appwrite'
 
-
-
 export default async function Page () {
   const { documents:tutors } = await listTutors();
 

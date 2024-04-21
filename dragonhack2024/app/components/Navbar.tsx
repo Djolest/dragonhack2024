@@ -1,11 +1,9 @@
-//import { NAV_LINKS } from "@/constants"
-import Image from "next/image"
 import Link from "next/link"
 
 const NAV_LINKS = [
     {label:'Home', key:1, href:'/'},
-    {label:'Search Tutor', key:2, href:'/'},
-    {label:'Search Notes', key:3, href:'/'},
+    {label:'Search Tutor', key:2, href:'/student/searchTutor'},
+    {label:'Search Notes', key:3, href:'/student/'}, // Hack for presentation purposes!
     {label:'About Us', key:4, href:'/'} 
 ];
 

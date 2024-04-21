@@ -1,10 +1,8 @@
-// pages/profile.tsx
-
 import React from 'react';
 import ProfilePage from '@/app/components/ProfilePage';
 
 const Profile = () => {
-  // Sample student data
+  // Sample student data, still not connected to the backend
   const student = {
     name: 'Dimitar Djorlev',
     info: 'Faculty, BSc',

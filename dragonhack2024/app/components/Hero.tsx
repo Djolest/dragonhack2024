@@ -1,5 +1,4 @@
 import React from 'react'
-// import Button from "@/components/Button"
 import Link from 'next/link'
 
 export default function Hero(){
@@ -15,7 +14,7 @@ export default function Hero(){
             <Link href="/api/auth/login" > Log in </Link> 
         </div>
         <div className="flexCenter  border-solid border-2 border-cyan-200 px-8 py-4 rounded-lg hover:bg-cyan-500 hover:text-white">
-            <Link href="/api/auth/login"> Sign up </Link>
+            <Link href="/api/auth/login"> Sign up </Link> {/* Hack, we wanted two buttons for landing page, but Auth0 provides one api */}
         </div>
       </div>
     </div>
